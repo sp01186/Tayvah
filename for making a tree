@@ -1,0 +1,41 @@
+1      1 Call: rabbit(_500) ?
+      2      2 Call: sol(_1128) ?
+      3      3 Call: member(house(brown,_1626,_1627),[house(_1613,_1614,_1615),house(_1617,_1618,_1619),house(_1621,_1622,_1623)]) ?
+      4      3 Call: member(house(blue,_2579,_2580),[house(brown,_1614,_1615),house(_1617,_1618,_1619),house(_1621,_1622,_1623)]) ?
+      5      3 Call: member(house(black,french,_3533),[house(brown,_1614,_1615),house(blue,_1618,_1619),house(_1621,_1622,_1623)]) ?
+      6      3 Call: member(house(_4484,spanish,jaguar),[house(brown,_1614,_1615),house(blue,_1618,_1619),house(black,french,_1623)]) ? 
+      7      3 Call: member(house(_5437,_5438,snail),[house(brown,spanish,jaguar),house(blue,_1618,_1619),house(black,french,_1623)]) ?
+      8      3 Call: rightof(house(_6390,_6391,snail),house(_6394,japanese,_6396),[house(brown,spanish,jaguar),house(blue,_1618,snail),house(black,french,_1623)]) ?
+      9      4 Call: rightof(house(_6390,_6391,snail),house(_6394,japanese,_6396),[house(blue,_1618,snail),house(black,french,_1623)]) ?
+     10      3 Call: leftof(house(blue,_8299,_8300),house(_8302,_8303,snail),[house(brown,spanish,jaguar),house(blue,japanese,snail),house(black,french,snail)]) ?
+     11      4 Call: leftof(house(blue,_8299,_8300),house(_8302,_8303,snail),[house(blue,japanese,snail),house(black,french,snail)]) ?
+     12      3 Call: member(house(_10206,_10207,rabbit),[house(brown,spanish,jaguar),house(blue,japanese,snail),house(black,french,snail)]) ?
+     10      3 Redo: leftof(house(blue,japanese,snail),house(black,french,snail),[house(brown,spanish,jaguar),house(blue,japanese,snail),house(black,french,snail)]) ?
+     11      4 Redo: leftof(house(blue,japanese,snail),house(black,french,snail),[house(blue,japanese,snail),house(black,french,snail)]) ?
+     13      5 Call: leftof(house(blue,_8299,_8300),house(_8302,_8303,snail),[house(black,french,snail)]) ?
+     14      6 Call: leftof(house(blue,_8299,_8300),house(_8302,_8303,snail),[]) ?
+     14      6 Fail: leftof(house(blue,_8299,_8300),house(_8302,_8303,snail),[]) ?
+     13      5 Fail: leftof(house(blue,_8299,_8300),house(_8302,_8303,snail),[house(black,french,snail)]) ?
+     11      4 Fail: leftof(house(blue,_8299,_8300),house(_8302,_8303,snail),[house(blue,japanese,snail),house(black,french,snail)]) ?
+     10      3 Fail: leftof(house(blue,_8299,_8300),house(_8302,_8303,snail),[house(brown,spanish,jaguar),house(blue,japanese,snail),house(black,french,snail)]) ?
+      8      3 Redo: rightof(house(black,french,snail),house(blue,japanese,snail),[house(brown,spanish,jaguar),house(blue,japanese,snail),house(black,french,snail)]) ?
+      9      4 Redo: rightof(house(black,french,snail),house(blue,japanese,snail),[house(blue,japanese,snail),house(black,french,snail)]) ?
+     15      5 Call: rightof(house(_6390,_6391,snail),house(_6394,japanese,_6396),[house(black,french,_1623)]) ?
+     16      6 Call: rightof(house(_6390,_6391,snail),house(_6394,japanese,_6396),[]) ?
+     16      6 Fail: rightof(house(_6390,_6391,snail),house(_6394,japanese,_6396),[]) ?
+     15      5 Fail: rightof(house(_6390,_6391,snail),house(_6394,japanese,_6396),[house(black,french,_1623)]) ?
+      9      4 Fail: rightof(house(_6390,_6391,snail),house(_6394,japanese,_6396),[house(blue,_1618,snail),house(black,french,_1623)]) ?
+      8      3 Fail: rightof(house(_6390,_6391,snail),house(_6394,japanese,_6396),[house(brown,spanish,jaguar),house(blue,_1618,snail),house(black,french,_1623)]) ?
+      7      3 Redo: member(house(blue,_1618,snail),[house(brown,spanish,jaguar),house(blue,_1618,snail),house(black,french,_1623)]) ?
+     17      3 Call: rightof(house(_6390,_6391,snail),house(_6394,japanese,_6396),[house(brown,spanish,jaguar),house(blue,_1618,_1619),house(black,french,snail)]) ?
+     18      4 Call: rightof(house(_6390,_6391,snail),house(_6394,japanese,_6396),[house(blue,_1618,_1619),house(black,french,snail)]) ?
+     19      3 Call: leftof(house(blue,_8299,_8300),house(_8302,_8303,snail),[house(brown,spanish,jaguar),house(blue,japanese,_1619),house(black,french,snail)]) ?
+     20      4 Call: leftof(house(blue,_8299,_8300),house(_8302,_8303,snail),[house(blue,japanese,_1619),house(black,french,snail)]) ?
+     21      3 Call: member(house(_10206,_10207,rabbit),[house(brown,spanish,jaguar),house(blue,japanese,_1619),house(black,french,snail)]) ?
+     22      3 Call: permutation([black,blue,brown],[brown,blue,black]) ?
+     23      3 Call: permutation([french,spanish,japanese],[spanish,japanese,french]) ?
+     24      3 Call: permutation([jaguar,snail,rabbit],[jaguar,rabbit,snail]) ?
+     25      2 Call: member(house(_14527,_500,rabbit),[house(brown,spanish,jaguar),house(blue,japanese,rabbit),house(black,french,snail)]) ?
+
+
+?       1      1 Exit: rabbit(japanese) ?
